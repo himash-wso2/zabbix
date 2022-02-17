@@ -30,8 +30,6 @@ sed -i 's/Zabbix server/'"$HOSTNAME"'/g' zabbix_agentd.conf
 
 echo "192.168.8.95 prod-zabbix-lk.wso2.com" >> /etc/hosts
 
-systemctl restart zabbix-agent
-
-systemctl enable zabbix-agent
+/etc/init.d/zabbix-agent restart
 
 echo "PLEASE MAKE SURE THE HOSTNAME IS CORRECT IN GOOGLE SHEET. INSTALLATION SUCCESSFULL"
