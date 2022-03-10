@@ -8,9 +8,9 @@ cd /home/zabbixagent
 # Download & Install zabbix agent for Ubuntu #
 ##############################################
 
-wget https://repo.zabbix.com/zabbix/5.4/debian/pool/main/z/zabbix/zabbix-agent_5.4.10-1+debian8_amd64.deb 
+wget https://repo.zabbix.com/zabbix/5.4/debian/pool/main/z/zabbix/zabbix-agent_5.4.10-1+debian8_amd64.deb --no-check-certificate
 
-dpkg -i zabbix-agent_5.4.10-1+debian8_amd64.deb 
+apt install -y zabbix-agent_5.4.10-1+debian8_amd64.deb 
 
 cd /etc/zabbix/
 
