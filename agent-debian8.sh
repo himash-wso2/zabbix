@@ -10,6 +10,10 @@ cd /home/zabbixagent
 
 wget https://repo.zabbix.com/zabbix/5.4/debian/pool/main/z/zabbix/zabbix-agent_5.4.10-1+debian8_amd64.deb --no-check-certificate
 
+apt-get update
+
+apt-get install libcurl3 -y
+
 apt install -y zabbix-agent_5.4.10-1+debian8_amd64.deb 
 
 cd /etc/zabbix/
