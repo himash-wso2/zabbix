@@ -18,8 +18,6 @@ apt install zabbix-agent -y
 
 cd /etc/zabbix/
 
-rm -fr /home/zabbixagent
-
 ################################
 ## Configure the zabbix agent ##
 ################################
