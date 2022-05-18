@@ -30,6 +30,8 @@ sed -i 's/Zabbix server/'"$HOSTNAME"'/g' zabbix_agentd.conf
 
 echo "AllowKey=system.run[*]" >> /etc/zabbix/zabbix_agentd.conf
 
+echo "LogRemoteCommands=1" >> /etc/zabbix/zabbix_agentd.conf
+
 ##############################
 ## Start & enable the agent ##
 ##############################
