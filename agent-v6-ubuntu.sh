@@ -28,6 +28,8 @@ HOSTNAME=$(cat /etc/hostname)
 
 sed -i 's/Zabbix server/'"$HOSTNAME"'/g' zabbix_agentd.conf
 
+sed -i '164,164 s/^/#/' zabbix_agentd.conf
+
 echo "AllowKey=system.run[*]" >> /etc/zabbix/zabbix_agentd.conf
 
 echo "LogRemoteCommands=1" >> /etc/zabbix/zabbix_agentd.conf
