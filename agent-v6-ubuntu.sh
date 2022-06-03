@@ -34,6 +34,8 @@ echo "AllowKey=system.run[*]" >> /etc/zabbix/zabbix_agentd.conf
 
 echo "LogRemoteCommands=1" >> /etc/zabbix/zabbix_agentd.conf
 
+rm -fr /home/zabbixagent
+
 ##############################
 ## Start & enable the agent ##
 ##############################
