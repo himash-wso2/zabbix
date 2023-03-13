@@ -28,7 +28,7 @@ HOSTNAME=$(cat /etc/hostname)
 
 sed -i 's/Zabbix server/'"$HOSTNAME"'/g' zabbix_agentd.conf
 
-sed -i '139,139 s/^/#/' zabbix_agentd.conf
+sed -i '171,171 s/^/#/' zabbix_agentd.conf
 
 echo "EnableRemoteCommands=1" >> /etc/zabbix/zabbix_agentd.conf
 
