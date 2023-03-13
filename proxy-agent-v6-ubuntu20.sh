@@ -22,7 +22,7 @@ cd /etc/zabbix/
 ## Configure the zabbix agent ##
 ################################
 
-sed -i 's/127.0.0.1/172.31.3.4/g' zabbix_agentd.conf
+sed -i 's/127.0.0.1/172.30.129.9/g' zabbix_agentd.conf
 
 HOSTNAME=$(cat /etc/hostname)
 
